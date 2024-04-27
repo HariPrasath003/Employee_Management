@@ -4,8 +4,10 @@ import com.example.employee.model.Employee;
 
 import java.util.List;
 
-public interface EmployeeSevice {
+public interface EmployeeService {
     Employee createEmployee(Employee employee);
 
     List<Employee> getAllEmployees();
+
+    boolean deleteEmployee(long id);
 }
